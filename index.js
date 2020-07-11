@@ -21,7 +21,7 @@ mysqlConnection.connect((err)=>{
 app.listen(3000,()=>console.log('Express Server is Running  at port no :3000'));
 
 app.get('/employees',(req,res)=>{
-  mysqlConnection.query('Select * form employee',(err,rows,fields)=>{
+  mysqlConnection.query('SELECT * From employee',(err,rows,fields)=>{
     if (!err)
       console.log(rows);
 

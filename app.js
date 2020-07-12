@@ -33,7 +33,7 @@ app.get('/',(req, res) => {
     let query = connection.query(sql, (err, rows) => {
         if(err) throw err;
         res.render('user_index', {
-            title : 'CRUD Operation using NodeJS / ExpressJS / MySQL',
+            title : 'CRUD Operation using NodeJS / ExpressJS / MySQL ',
             users : rows
         });
     });
@@ -62,7 +62,7 @@ app.get('/edit/:userId',(req, res) => {
         if(err) throw err;
         res.render('user_edit', {
             title : 'CRUD Operation using NodeJS / ExpressJS / MySQL',
-            user : result[0]
+            users : result[0]
         });
     });
 });
